@@ -17,7 +17,10 @@ class McPlayer {
     async getName() {
         if (this.playername != null)
             return this.playername
-
+        const response = await axios.get(`https://sessionserver.mojang.com/session/minecraft/profile/${this.uuid}`);
+        this.uuid = response.data.id;
+        this.playername = response.data.name;
+        return this.playername;
     }
     async getUUID() {
         if (this.uuid != null)
