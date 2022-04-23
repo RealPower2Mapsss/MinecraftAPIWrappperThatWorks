@@ -8,4 +8,13 @@ class McPlayer {
     getUUID() {
 
     }
+    getSking() {
+
+    }
+    getCape() {
+
+    }
+    getHead() {
+
+    }
 }
