@@ -14,7 +14,8 @@ const sharp = require('sharp');
 
 // Turns out there aare skins where the head is not where i would it expect it to be! The Example is: My Skin and the skin from Editfusee
 
-//TODO: This works fine for my skin
+
+// Weird skin
 // sharp('sk.png').extract({ width: 8, height: 8, left: 40, top: 8 }).toFile('out.png')
 //     .then(function (new_file_info) {
 //         console.log("Image cropped and saved");
@@ -24,12 +25,12 @@ const sharp = require('sharp');
 //         console.log(err);
 //     });
 
-
-sharp('sk2.png').extract({ width: 8, height: 8, left: 40, top: 8 }).toFile('out.png')
-    .then(function (new_file_info) {
-        console.log("Image cropped and saved");
-    })
-    .catch(function (err) {
-        console.log("An error occured");
-        console.log(err);
-    });
+// Same Skin
+// sharp('sk2.png').extract({ width: 8, height: 8, left: 8, top: 8 }).toFile('out.png')
+//     .then(function (new_file_info) {
+//         console.log("Image cropped and saved");
+//     })
+//     .catch(function (err) {
+//         console.log("An error occured");
+//         console.log(err);
+//     });
