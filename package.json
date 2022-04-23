@@ -1,0 +1,20 @@
+{
+	"name": "minecraftapiwrappper",
+	"version": "1.0.0",
+	"description": "A Simple and handy minecraft API Wrapper",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Jodu555/MinecraftAPIWrappper.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/Jodu555/MinecraftAPIWrappper/issues"
+	},
+	"homepage": "https://github.com/Jodu555/MinecraftAPIWrappper#readme"
+}
