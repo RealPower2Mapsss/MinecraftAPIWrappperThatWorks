@@ -31,8 +31,10 @@ class McPlayer {
         this.playername = response.data.name;
         return this.uuid;
     }
-    getSking() {
-
+    async getSkin() {
+        const response = await axios.get(`https://sessionserver.mojang.com/session/minecraft/profile/${this.uuid}`);
+        const values = JSON.parse(atob(response.data.properties[0].value));
+        console.log(values.textures.SKIN);
     }
     getCape() {
 
