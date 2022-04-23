@@ -1,10 +1,11 @@
+const axios = require('axios');
+
 class McPlayer {
 
     /**
      * @param  {String} nameOrUUID can either be the minecraft player name or his UUID
      */
     constructor(nameOrUUID) {
-        console.log(nameOrUUID.length);
         this.playername = null;
         this.uuid = null;
         if (nameOrUUID.length <= 16) {
@@ -13,13 +14,19 @@ class McPlayer {
             this.uuid = nameOrUUID;
         }
     }
-    getName() {
+    async getName() {
         if (this.playername != null)
             return this.playername
+
     }
-    getUUID() {
+    async getUUID() {
         if (this.uuid != null)
             return this.uuid
+
+        const response = await axios.get(`https://api.mojang.com/users/profiles/minecraft/${this.playername}`);
+        this.uuid = response.data.id;
+        this.playername = response.data.name;
+        return this.uuid;
     }
     getSking() {
 
