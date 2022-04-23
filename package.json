@@ -10,7 +10,18 @@
 		"type": "git",
 		"url": "git+https://github.com/Jodu555/MinecraftAPIWrappper.git"
 	},
-	"keywords": [],
+	"keywords": [
+		"Minecraft",
+		"Minecraft API",
+		"Mojang API",
+		"Minecraft Skin",
+		"Minecraft Head",
+		"Minecraft UUID",
+		"wrapper",
+		"API",
+		"Promise",
+		"Async"
+	],
 	"author": "",
 	"license": "ISC",
 	"bugs": {

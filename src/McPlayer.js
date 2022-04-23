@@ -18,3 +18,5 @@ class McPlayer {
 
     }
 }
+
+module.exports = McPlayer;
