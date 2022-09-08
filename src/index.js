@@ -1,3 +1,3 @@
 module.exports = {
-    McPlayer: require("./src/McPlayer"),
+    McPlayer: require("./McPlayer"),
 }
